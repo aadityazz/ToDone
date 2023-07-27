@@ -1,0 +1,25 @@
+body {
+    width: 300px;
+    min-height: 200px;
+    padding: 10px;
+}
+
+h1 {
+    text-align: center;
+}
+
+#todo-list {
+    margin-top: 10px;
+}
+
+.todo-item {
+    margin: 5px;
+}
+
+input[type="text"] {
+    width: 180px;
+}
+
+button {
+    margin-left: 5px;
+}
