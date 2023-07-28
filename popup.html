@@ -1,95 +1,27 @@
-<!-- popup.html -->
 <!DOCTYPE html>
 <html>
 <head>
   <title>My Todo List</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="popup.css">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 20px;
-      background-color: #f3f3f3;
-    }
-
-    h1 {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-
-    #addButton {
-      display: block;
-      margin: 0 auto;
-      padding: 8px 16px;
-      background-color: #4285F4;
-      color: white;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-
-    #addButton:hover {
-      background-color: #3B77E4;
-    }
-
-    #todo-list {
-      margin-top: 20px;
-    }
-
-    .todo-item {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border: 1px solid #ddd;
-      background-color: #fff;
-      padding: 10px;
-      margin-bottom: 10px;
-      border-radius: 4px;
-    }
-
-    .todo-title {
-      flex-grow: 1;
-      margin-right: 10px;
-      cursor: pointer;
-    }
-
-    .delete-button {
-      padding: 4px 8px;
-      background-color: #EF5350;
-      color: white;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-
-    .delete-button:hover {
-      background-color: #E53935;
-    }
-
-    .heading {
-      display: flex;
-      align-items: center;
-      justify-content: center; /* Center the content horizontally */
-      margin-bottom: 20px;
-    }
-
-    .heading img {
-      width: 24px; /* Adjust the width as needed */
-      height: 24px; /* Adjust the height as needed */
-      margin-right: 10px;
-    }
-
-    h1 {
-      margin: 0;
-    }
-  </style>
 </head>
 <body>
-<div class="heading">
-  <img src="image/icon48.png" alt="Todo List Icon">
-  <h1>To Done</h1>
+<div class="header">
+  <div class="center">
+    <img class="logo" src="image/icon48.png" alt="Todo List Icon">
+    <h1 class="todo-heading">To Done</h1>
+  </div>
 </div>
-<button id="addButton">Add To List</button>
+<div class="button">
+  <div class="center">
+    <button id="exportButton">Export</button>
+    <button id="addButton">Add</button>
+  </div>
+</div>
+<div class="line"></div>
 <div id="todo-list"></div>
 <script src="popup.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
 </body>
 </html>
